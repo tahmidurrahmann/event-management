@@ -4,10 +4,11 @@ import { FcGoogle } from 'react-icons/fc';
 import { AuthContext } from "../../shared/AuthProvider/AuthProvider";
 import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
 
-    const { createUser, update, googleSignIn } = useContext(AuthContext);
+    const { createUser, googleSignIn } = useContext(AuthContext);
     const [displayError, setDisplayError] = useState(null);
     const [showPassword, setShowPassword] = useState(false);
 
@@ -17,21 +18,18 @@ const Register = () => {
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(name, photo, email, password);
         setDisplayError('');
+        console.log(name, photo, email, password);
 
-        // if(!/^(?=.*[A-Z])(?=.*[!@#$%^&*])(.{7,})$/.test(password)){
-        //     toast.error('Your password must have ')
-        // }
         if (password.length < 6) {
             setDisplayError('Password should be at least 6 characters');
             return;
         }
-        else if(!/[A-Z]/.test(password)){
+        else if (!/[A-Z]/.test(password)) {
             setDisplayError('Your Password must contain a Capital Letter');
             return;
         }
-        else if(!/^(?=.*[!@#$%^&*()_+{}:;<>,.?~\\|-])/.test(password)){
+        else if (!/^(?=.*[!@#$%^&*()_+{}:;<>,.?~\\|-])/.test(password)) {
             setDisplayError('Password must contain a Special Character');
             return;
         }
@@ -39,30 +37,33 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 const loggedUser = result.user;
-                update( loggedUser, name, photo )
+                updateProfile(loggedUser, {
+                    displayName : name,
+                    photoURL : photo,
+                })
                 .then(()=>{
                     toast.success('Account created successfully')
                 })
-                .catch(error=>{
-                    const message = error.message;
-                    toast.error(message)
+                .catch(error =>{
+                    console.log(error.message);
                 })
             })
             .catch(error => {
                 const message = error.message;
                 setDisplayError(message)
+                console.log(message);
             })
     }
 
     const handleGoogleSignIn = () => {
         googleSignIn()
-        .then(()=>{
-            toast.success('Google signIn Successful')
-        })
-        .catch(error => {
-            const message = error.message;
-            toast.error(message)
-        })
+            .then(() => {
+                toast.success('Google signIn Successful')
+            })
+            .catch(error => {
+                const message = error.message;
+                toast.error(message)
+            })
     }
 
     return (
@@ -75,7 +76,7 @@ const Register = () => {
                 <div className="relative">
                     <input className="w-full border p-4 mb-4 rounded-md"
                         type={showPassword ? "text" : "password"}
-                        name="password" placeholder="Your Password" required id="4" /> <span className="absolute top-5 right-3" onClick={() => setShowPassword(!showPassword)}>{showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye> }</span>
+                        name="password" placeholder="Your Password" required id="4" /> <span className="absolute top-5 right-3" onClick={() => setShowPassword(!showPassword)}>{showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</span>
                 </div> <br />
                 <div>
                     {displayError && <p className="text-red-500 my-4">{displayError}</p>}

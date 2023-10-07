@@ -4,7 +4,7 @@ const Memories = () => {
     return (
         <div className="my-4 md:my-10">
             <div className="text-center">
-                <h3 className="text-xl text-[#F9A51A] mb-2">WHY CHOOSE US</h3>
+                <h3 className="text-3xl text-[#F9A51A] mb-2 font-amatic">WHY CHOOSE US</h3>
                 <h1 className="text-2xl md:text-4xl font-extrabold">Making Moments In To <br /> Memories</h1>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 text-center my-16 p-8'>

@@ -6,10 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily : {
-        poppins : "'Poppins', 'sans-serif'",
+      fontFamily: {
+        freDoka:" 'Fredoka', sans- serif",
+        poppins: "'Poppins', sans- serif",
+        amatic : "'Amatic SC', cursive",
       }
     },
   },
-  plugins: [require("daisyui")],
+plugins: [require("daisyui")],
 }

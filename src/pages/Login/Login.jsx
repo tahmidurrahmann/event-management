@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { useContext, useState } from "react";
 import { AuthContext } from "../../shared/AuthProvider/AuthProvider";
@@ -8,7 +8,8 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 const Login = () => {
 
     const { signIn, googleSignIn } = useContext(AuthContext);
-
+    const location = useLocation();
+    const navigate = useNavigate();
     const [loginError, setLoginError] = useState(null);
     const [showPassword, setShowPassword] = useState(false);
 
@@ -19,10 +20,9 @@ const Login = () => {
         console.log(email, password);
         setLoginError('');
         signIn(email, password)
-            .then(result => {
-                const loggedUser = result.user;
-                console.log(loggedUser);
+            .then(() => {
                 toast.success('Log in Successful');
+                navigate(location?.state ? location.state : '/' )
             })
             .catch(error => {
                 const message = error.message;

@@ -2,42 +2,42 @@
       {
         "id": 1,
         "name": "Indoor Party",
-        "price": 15000,
+        "price": 1500,
         "description": "Transform your indoor space into a vibrant and festive paradise with our indoor party services. Whether it's a cozy gathering of friends and family or a larger celebration, we've got you covered. Our expert team will take care of every detail to ensure your indoor party is a memorable and stress-free experience.From colorful balloon arrangements to themed decor, our decorators will work their magic to set the perfect mood for your indoor celebration. Enjoy a delectable feast with a menu tailored to your preferences, featuring appetizers, a mouthwatering main course, and tempting desserts.Keep your guests entertained with a variety of indoor activities, including games, music, and live performances suitable for all ages.",
         "imageUrl": "https://point.moxcreative.com/beeparty/wp-content/uploads/sites/10/2022/05/wish-for-birthday-1024x682.jpg"
       },
       {
         "id": 2,
         "name": "Outdoor Party",
-        "price": 25000,
+        "price": 2500,
         "description": "Elevate your outdoor event with our comprehensive outdoor party services. Whether you're planning a sunny garden soiree, a thrilling outdoor adventure, or any special gathering beneath the open sky, we have everything you need to make it a resounding success.Our team of experts will meticulously craft an outdoor experience that's tailored to your unique vision and preferences. From the moment your guests arrive, they'll be immersed in an atmosphere of excitement and enjoyment.Choose from a variety of picturesque outdoor venues that provide the perfect backdrop for your celebration, from lush gardens to tranquil lakesides. Let your creativity shine with customizable decor options. Whether you want a rustic, bohemian, or elegant theme, we'll transform your outdoor space into a stunning setting.",
         "imageUrl": "https://point.moxcreative.com/beeparty/wp-content/uploads/sites/10/2022/05/little-girl-playing-tag-blindfolded-1024x682.jpg"
       },
       {
         "id": 3,
         "name": "Birthday Party",
-        "price": 30000,
+        "price": 3000,
         "description": "Celebrate your special day in style with our exceptional birthday party event services. We are dedicated to making your birthday party an unforgettable and stress-free experience. Whether you're marking a milestone or simply gathering loved ones for a memorable celebration, we've got everything you need to ensure your birthday party is a resounding success.Our team of experts is here to curate an unforgettable experience tailored to your unique preferences, creating cherished memories that will last a lifetime. We offer a wide range of services to make your birthday celebration truly special.Choose from a variety of fabulous venues, each with its own charm and character. Whether you prefer a cozy, intimate setting or a grand ballroom, we have the perfect venue to match your vision.",
         "imageUrl": "https://point.moxcreative.com/beeparty/wp-content/uploads/sites/10/2022/05/kids-birthday-party-boy-blowing-out-candles-on-cake-1024x576.jpg"
       },
       {
         "id": 4,
         "name": "Theme Party",
-        "price": 40000,
+        "price": 4000,
         "description": "Elevate your celebration with our captivating theme party services. We specialize in turning ordinary gatherings into extraordinary experiences by creating immersive and memorable thematic events.Our team offers a wide range of themes, from elegant masquerade balls to whimsical tropical getaways, and we're open to bringing your unique ideas to life. With meticulous attention to detail, we transform your venue into a themed wonderland, from table settings to lighting.Encourage your guests to fully embrace the theme with costume coordination, adding an extra layer of fun and excitement. We even extend the theme to the menu, with culinary delights and cocktails tailored to match the chosen theme.",
         "imageUrl": "https://point.moxcreative.com/beeparty/wp-content/uploads/sites/10/2022/05/kids-enjoying-birthday-party-in-summer-1024x682.jpg"
       },
       {
         "id": 5,
         "name": "Family Party",
-        "price": 20000,
+        "price": 2000,
         "description": "Elevate your family gatherings to a whole new level with our expert event management services tailored specifically for family parties. Whether it's a reunion, anniversary, or simply a joyous get-together, we create an atmosphere of warmth and togetherness, carefully selecting the perfect venue, curating personalized decor, and offering a delectable feast that caters to all tastes. With activities for all ages and professional photographers to capture the special moments, our stress-free planning ensures that you can focus on creating cherished memories with your loved ones, making every family party an unforgettable celebration of togetherness.",
         "imageUrl": "https://point.moxcreative.com/beeparty/wp-content/uploads/sites/10/2022/05/happy-family-of-three-celebrating-birthday-party-in-the-park-happy-birthday--1024x683.jpg"
       },
       {
         "id": 6,
         "name": "Event Party",
-        "price": 50000,
+        "price": 5000,
         "description": "Event management for a party is the art and science of orchestrating memorable and seamless celebrations. From the initial concept and theme selection to the meticulous planning of every detail, event managers bring dreams to life. They meticulously coordinate venues, catering, entertainment, decorations, and logistics, ensuring a harmonious and unforgettable experience for guests. With a keen eye for design, a knack for organization, and a talent for problem-solving, event managers transform visions into reality, allowing hosts and guests alike to revel in the joy of the moment without worry.",
         "imageUrl": "https://point.moxcreative.com/beeparty/wp-content/uploads/sites/10/2022/05/summer-outdoor-kids-birthday-party-group-of-happy-children-celebrating-birthday-in-park-1024x684.jpg"
       }

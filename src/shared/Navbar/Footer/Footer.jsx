@@ -4,8 +4,8 @@ const Footer = () => {
     return (
         <footer className="footer footer-center p-10 bg-[#070606] text-white rounded">
             <nav className="grid grid-flow-col gap-4">
-                <Link>AboutUs</Link>
-                <Link>ContactUs</Link>
+                <Link to='/aboutUs'>AboutUs</Link>
+                <Link to='/contactUs'>ContactUs</Link>
                 <Link to='/register'>Register</Link>
                 <Link to='/login'>Login</Link>
             </nav>

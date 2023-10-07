@@ -17,13 +17,13 @@ const Service = () => {
     const { name, price, description, imageUrl } = eventDetail;
 
     return (
-        <div className="p-10 lg:p-0">
+        <div className="container mx-auto p-10 md:p-0">
             <div className="card bg-base-100 shadow-xl my-6">
                 <img className="rounded-t-lg" src={imageUrl} alt={`${imageUrl} of Course`} />
                 <div className="card-body text-center">
                     <h2 className="text-xl font-semibold">{name}</h2>
                     <p className="my-2 text-xl font-bold">Event Cost:  ${price}</p>
-                    <p className="mb-2 text-[#1C1B1B99]">{description}</p>
+                    <p className="mb-2 font-poppins text-[#1C1B1B99]">{description}</p>
                 </div>
             </div>
         </div>

@@ -8,10 +8,10 @@ const Home = () => {
     const eventData = useLoaderData();
 
     return (
-        <div>
+        <div className="mx-auto container">
             <Banner></Banner>
             <div className="my-20">
-                <h3 className="text-[#F9A51A] text-center text-xl my-2">What We Offer</h3>
+                <h3 className="text-[#F9A51A] text-center text-3xl my-2 font-amatic">What We Offer</h3>
                 <h1 className="text-2xl md:text-4xl text-center mb-6 font-extrabold">Awesome Services</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
                     {
