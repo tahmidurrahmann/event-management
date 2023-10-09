@@ -42,6 +42,7 @@ const Register = () => {
                     photoURL : photo,
                 })
                 .then(()=>{
+                    window.location.reload();
                     toast.success('Account created successfully')
                 })
                 .catch(error =>{

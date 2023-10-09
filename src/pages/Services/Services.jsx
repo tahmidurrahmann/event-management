@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Services = ({ single }) => {
     const { id, name, price, description, imageUrl } = single;
     return (
-            <div className="card bg-gray-50 shadow-xl" data-aos="fade-right" data-aos-duration="3000">
+            <div className="card bg-gray-50 shadow-xl overflow-hidden" data-aos="fade-right" data-aos-duration="3000">
                 <img className="md:h-[250px] lg:h-[300px] rounded-t-lg" src={imageUrl} alt={`${imageUrl} of Course`} />
                 <div className="card-body text-center">
                     <h2 className="text-2xl text-[#55595C] font-semibold">{name}</h2>
