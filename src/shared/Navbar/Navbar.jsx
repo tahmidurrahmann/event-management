@@ -31,7 +31,7 @@ const Navbar = () => {
                 >
                     <span className="text-xl font-semibold">Home</span>
                 </NavLink>
-                { user && <NavLink
+                {user && <NavLink
                     to="/booking"
                     className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "text-lg text-white font-medium bg-[#F9A51A] py-2 px-4 lg:px-6 rounded-lg" : ""
@@ -47,6 +47,16 @@ const Navbar = () => {
                 >
                     <span className="text-xl font-semibold">About Us</span>
                 </NavLink>
+                {!user &&
+                    <NavLink
+                        to="/register"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "text-lg text-white font-medium bg-[#F9A51A] py-2 px-4 lg:px-6 rounded-lg" : ""
+                        }
+                    >
+                        <span className="text-xl font-semibold">Register</span>
+                    </NavLink>
+                }
                 {user && <NavLink
                     to="/contactUs"
                     className={({ isActive, isPending }) =>

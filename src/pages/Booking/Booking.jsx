@@ -6,7 +6,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 const Booking = () => {
     return (
         <div>
-            <div className="background h-[250px] md:h-[400px] lg:h-[550px] p-10">
+            <div className="background h-[250px] md:h-[400px] lg:h-[550px] p-10" data-aos="zoom-out-down" data-aos-duration="2000">
                 <div className='font-amatic my-8 md:my-16 mx-auto rounded-lg p-1 flex justify-center items-center gap-4 bg-[#ABCE4E] w-56'>
                     <h1 className='text-2xl md:text-3xl text-white'>HOME</h1>
                     <p><BiRightArrowAlt></BiRightArrowAlt></p>
@@ -16,9 +16,9 @@ const Booking = () => {
                     <h1 className='text-[#F9A51A] text-4xl md:text-7xl font-bold'>BOOKING</h1>
                 </div>
             </div>
-
+            
             <div className='container mx-auto my-20 flex flex-col lg:flex-row gap-10 justify-evenly items-center'>
-                <div>
+                <div data-aos="fade-right" data-aos-duration="2000">
                     <form className='px-10 lg:p-0'>
                         <div className='flex gap-3'>
                             <input className='px-5 py-2 w-1/2 rounded bg-[#F4F4F4]' type="text" name="name" placeholder='Name' id="name" />
@@ -32,9 +32,9 @@ const Booking = () => {
                         <input type="submit" className='bg-[#F9A51A] py-2 w-1/4 rounded text-white font-medium text-2xl font-amatic' value="Submit" />
                     </form>
                 </div>
-                <div>
-                    <h1 className='font-amatic text-2xl text-[#F9A51A] my-4'>BOOK A DATE</h1>
-                    <h1 className='text-5xl font-bold'>It’s your day, make it <br /> worth remembering.</h1>
+                <div data-aos="fade-left" data-aos-duration="2000">
+                    <h1 className='font-amatic text-center md:text-left text-2xl text-[#F9A51A] my-4'>BOOK A DATE</h1>
+                    <h1 className='text-2xl text-center md:text-left md:text-5xl font-bold'>It’s your day, make it <br /> worth remembering.</h1>
                     <div className='flex gap-10 justify-center items-center my-4'>
                         <div className='space-y-2'>
                             <div className='flex justify-center items-center'>
